@@ -4,7 +4,6 @@ import { ListGroup } from 'react-bootstrap';
 export default class ChatList extends React.Component {
 
   static propTypes = {
-    actions: PropTypes.func.isRequired,
     chats: PropTypes.array.isRequired,
   }
 
@@ -16,7 +15,6 @@ export default class ChatList extends React.Component {
           return (
               <ChatItem
                 chat={chat}
-                actions={this.props.actions}
               />
           );
         })

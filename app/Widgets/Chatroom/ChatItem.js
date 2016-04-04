@@ -5,7 +5,6 @@ import { ListGroupItem } from 'react-bootstrap';
 export default class ChatItem extends React.Component {
 
   static propTypes = {
-    actions: PropTypes.func.isRequired,
     chat: PropTypes.object.isRequired,
   }
 

@@ -3,8 +3,6 @@ import WriteChat from './WriteChat';
 import ChatList from './ChatList';
 import { connect } from 'react-redux';
 import { bindActionCreators } from 'redux';
-import { Button } from 'react-bootstrap';
-import { Link } from 'react-router';
 
 import { actions } from '../../redux/actions';
 
@@ -45,7 +43,8 @@ class Chatroom extends Component {
   render() {
     return (
       <div style={style.todo} className="bootstrap-border">
-        <ChatList actions={this.addHandler} chats={chats.chatss}/>
+        <ChatList chats={chats.chatss}/>
+        <WriteChat addMessage={this.addHandler}/>
       </div>
     );
   }
